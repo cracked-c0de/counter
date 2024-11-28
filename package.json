@@ -1,7 +1,6 @@
 {
   "name": "counter",
   "homepage": "https://cracked-c0de.github.io/counter/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
