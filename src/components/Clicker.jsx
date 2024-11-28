@@ -1,5 +1,5 @@
 import { useState } from "react"
-import styles from "./Clicker.module.css"
+import "./Clicker.module.css"
 
 function Clicker() {
     let [count, setCount] = useState(() => {
