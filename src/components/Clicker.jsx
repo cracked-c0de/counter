@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./Clicker.module.css"
+import styles from "./Clicker.module.css"
 
 function Clicker() {
     let [count, setCount] = useState(() => {
@@ -30,11 +30,11 @@ function Clicker() {
         })
     }
     return(
-        <div>
-            <h1>{count}</h1>
-            <button onClick={increase} aria-label="Increase button">Increase</button>
-            <button onClick={decrease} aria-label="Decrease button">Decrease</button>
-            <button onClick={reset} aria-label="Reset button">Reset</button>
+        <div className={styles.div}>
+            <h1 className={styles.h1}>{count}</h1>
+            <button onClick={increase} className={styles.button} aria-label="Increase button">Increase</button>
+            <button onClick={decrease} className={styles.button} aria-label="Decrease button">Decrease</button>
+            <button onClick={reset} className={styles.button} aria-label="Reset button">Reset</button>
         </div>
     )
 }
